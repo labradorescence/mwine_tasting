@@ -11,15 +11,15 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 # Features
 
 ### CRUD Operations
-* User can upload a picture of the bottle to add it as a new wine to journal, which will be uploaded to the cloudinary. 
-* User can add a new review with date, occasion, aroma, color, acidity level and taste. 
-* User can read the previous reviews.
-* User can read the wine aroma wheel as a reference.
+* Program cloud storage so user can upload photos of the wine bottle on the Cloudinary. 
+* Execute the application state so user can add a new review with date, occasion, aroma, color, acidity level and taste. 
+* Present the previous reviews.
+* Wine aroma wheel as a reference.
 
 ### React
-* Update the application state using React lifecycle methods
-* Organize the code structure by separating components into presentation components and container components
-* Implement inverse data flow to send props down and up between parent components and child components
+* Update the application state data of date, occasion, aroma, color, acidity level and taste using React lifecycle methods.
+* Organize the code structure by separating components into folders
+* Implement inverse data flow to send props up and down between parent components and child components
 
 ### Asynchronous fetches
 * Pulls wine reviews from the API using asynchronous fetches
