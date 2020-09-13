@@ -50,7 +50,7 @@ export default class ReviewForm extends React.Component {
         return (
             <div className="form">
                  <img src ="https://res.cloudinary.com/devzsgipb/image/upload/v1596194143/ocy6vpyax2wiijbt7xcn.jpg" alt = "wine smell wheel"></img>
-                <h1>** S E E * S W I R L * S N I F F * S I P * S A V O R **</h1>
+                <h1>*** S E E * S W I R L * S N I F F * S I P * S A V O R ***</h1>
 
                 <br></br>
 
@@ -105,7 +105,7 @@ export default class ReviewForm extends React.Component {
                 value={this.state.taste}
                 onChange={this.handleInputChange}
                 />
-                
+
                 </Form.Group>
                 <br></br><br></br>
                 <Form.Button>Submit</Form.Button>
