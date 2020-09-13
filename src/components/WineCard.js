@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Image, Item } from 'semantic-ui-react'
+import { Item } from 'semantic-ui-react'
 
 export default class WineCard extends React.Component {
 
