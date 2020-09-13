@@ -52,7 +52,6 @@ export default class WineCard extends React.Component {
                         <br></br><br></br>
                         </Item.Description>
                         <Item.Extra>
-                        {/* <Button floated='right'>Action REVIEW </Button> */}
                         </Item.Extra>
                     </Item.Content>
                     </Item>
