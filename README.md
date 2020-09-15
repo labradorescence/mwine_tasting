@@ -33,6 +33,7 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 * Ruby on Rails API
 * HTML/CSS
 * Active Record
+* postgresql
 
 # Tools
 * [Rack CORS](https://github.com/cyu/rack-cors)
