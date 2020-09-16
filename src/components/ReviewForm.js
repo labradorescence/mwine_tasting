@@ -33,7 +33,7 @@ export default class ReviewForm extends React.Component {
         }
         console.log(bodyData)
 
-        fetch("http://localhost:3001/api/v1/wines/7/reviews/", { //???? um.... what would be the address????????? /api/v1/wines/:wine_id/reviews/:id(.:format) 
+        fetch("https://mwine.herokuapp.com/api/v1/wines/1/reviews", { //???? um.... what would be the address????????? /api/v1/wines/:wine_id/reviews/:id(.:format) 
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
