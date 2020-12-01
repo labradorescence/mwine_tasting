@@ -10,7 +10,7 @@ export default class WineCollection extends React.Component{
     }
 
     componentDidMount(){
-        fetch("http://localhost:3001/api/v1/reviews")
+        fetch("https://mwine.herokuapp.com/api/v1/reviews")
             .then(r => r.json())
             .then(wine => {
                 // console.log(wine)
