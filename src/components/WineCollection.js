@@ -10,30 +10,33 @@ export default class WineCollection extends React.Component{
     }
 
     componentDidMount(){
-        fetch("https://mwine.herokuapp.com/api/v1/wines")
+        fetch("http://localhost:3001/api/v1/reviews")
             .then(r => r.json())
             .then(wine => {
                 // console.log(wine)
                 // console.log(this.state)
+                console.log(wine)
                 this.setState({ wine }) //setState w/ fetched db
             })
     }
 
     renderCards(){
         return this.state.wine.map(eachWine => 
+
+
             <WineCard 
             key={eachWine.id}
+            acidity_level={eachWine.acidity_level}
+            aroma={eachWine.aroma}
+            color={eachWine.color}
+            date={eachWine.date}
             name={eachWine.name}
-            producer={eachWine.producer}
-            ingredient={eachWine.ingredient}
-            wine_type={eachWine.wine_type}
-            region={eachWine.region}
-            country={eachWine.country}
+            note={eachWine.note}
+            occasion={eachWine.occasion}
             price={eachWine.price}
             rating={eachWine.rating}
-            note={eachWine.note}
-            image={eachWine.image}
-            reviews={eachWine.reviews}
+            region={eachWine.region}
+            taste={eachWine.taste}
             />)
     }
 

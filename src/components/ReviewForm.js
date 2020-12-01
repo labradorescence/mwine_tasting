@@ -33,7 +33,7 @@ export default class ReviewForm extends React.Component {
         }
         console.log(bodyData)
 
-        fetch("https://mwine.herokuapp.com/api/v1/wines/1/reviews", { //???? um.... what would be the address????????? /api/v1/wines/:wine_id/reviews/:id(.:format) 
+        fetch("http://localhost:3001/api/v1/reviews", { 
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -49,6 +49,10 @@ export default class ReviewForm extends React.Component {
     render(){
         return (
             <div className="form">
+                 
+                 
+
+                 
                  <img src ="https://res.cloudinary.com/devzsgipb/image/upload/v1596194143/ocy6vpyax2wiijbt7xcn.jpg" alt = "wine smell wheel"></img>
                 <h1>* S E E * S W I R L * S N I F F * S I P * S A V O R *</h1>
 

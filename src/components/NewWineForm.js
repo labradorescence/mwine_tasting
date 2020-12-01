@@ -24,7 +24,7 @@ export default class NewWineForm extends React.Component {
         const form = new FormData()
         form.append("image", this.state.image)
         // form.append("video", this.state.video)
-        fetch(`https://mwine.herokuapp.com/api/v1/wines`, {
+        fetch(`http://localhost:3001/api/v1/reviews`, {
             method: "POST",
             body: form
         })

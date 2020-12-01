@@ -39,3 +39,4 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 * [Rack CORS](https://github.com/cyu/rack-cors)
 * [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 * Semantc UI
+* Wheelnav

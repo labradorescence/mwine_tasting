@@ -36,12 +36,17 @@ export default class WineCard extends React.Component {
 
                         <Item.Header> {this.props.name}</Item.Header>
                         <Item.Description>
-                        producer: {this.props.producer}<br></br>
-                        ingredient: {this.props.ingredient} <br></br>
-                        region: {this.props.region}, {this.props.country}<br></br>
+                        aroma: {this.props.aroma}<br></br>
+                        date: {this.props.date}<br></br>
+                        region: {this.props.region}<br></br>
                         price: ${this.props.price}<br></br>
-                        raiting: {this.props.rating}/5<br></br>
+                        rating: {this.props.rating}/5<br></br>
                         note: {this.props.note}<br></br>
+                        acidity_level: {this.props.acidity_level}<br></br>
+                        color: {this.props.color}<br></br>
+                        occasion: {this.props.occasion}<br></br>
+                        taste: {this.props.taste}<br></br>                  
+                        
                         {this.props.reviews? this.renderReviews() : null}
                         <br></br><br></br>
                         <br></br><br></br>
