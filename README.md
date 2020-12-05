@@ -40,3 +40,16 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 * [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 * Semantc UI
 * Wheelnav
+
+# Wireframe
+              index
+                |
+               App
+                |
+            ReviewPage
+   _____________|______________
+  |             |               |
+ReviewForm  Search  ReviewCollection
+                                |
+                                |
+                            ReviewCard

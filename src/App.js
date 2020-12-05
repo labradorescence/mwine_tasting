@@ -1,5 +1,5 @@
 import React from 'react';
-import WinePage from './components/WinePage.js'
+import WinePage from './components/ReviewPage.js'
 import './App.css';
 
 export default class App extends React.Component {

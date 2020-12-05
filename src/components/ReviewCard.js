@@ -1,7 +1,7 @@
 import React from 'react'
 import { Item } from 'semantic-ui-react'
 
-export default class WineCard extends React.Component {
+export default class ReviewCard extends React.Component {
 
     renderReviews = () => {
                 console.log(this.props.reviews)
@@ -9,7 +9,7 @@ export default class WineCard extends React.Component {
                     console.log(eachReview.aroma)
                 return (
                 <div>
-                    <br></br>
+                <br></br>
                 <h3> Review </h3>
                 review date: {eachReview.date}<br></br>
                 review occasion: {eachReview.occasion}<br></br>
@@ -19,12 +19,12 @@ export default class WineCard extends React.Component {
                 review taste: {eachReview.taste}<br></br>
                 <br></br>
                 </div>
-                
                 )
             })
     }
     render(){
-        //const {image, name, aroma } = this.props ??? WHAT DOES THIS DO?
+        console.log(this.props.date)
+        // const {image, name, aroma } = this.props ??? WHAT DOES THIS DO?
         return (
                 <Item.Group relaxed>
                     <Item>
@@ -36,16 +36,20 @@ export default class WineCard extends React.Component {
 
                         <Item.Header> {this.props.name}</Item.Header>
                         <Item.Description>
-                        aroma: {this.props.aroma}<br></br>
                         date: {this.props.date}<br></br>
-                        region: {this.props.region}<br></br>
-                        price: ${this.props.price}<br></br>
+                        name: {this.props.name}<br></br>
                         rating: {this.props.rating}/5<br></br>
-                        note: {this.props.note}<br></br>
+                        occasion: {this.props.occasion}<br></br>
                         acidity_level: {this.props.acidity_level}<br></br>
                         color: {this.props.color}<br></br>
-                        occasion: {this.props.occasion}<br></br>
-                        taste: {this.props.taste}<br></br>                  
+
+                        aroma: {this.props.aroma}<br></br>
+                        taste: {this.props.taste}<br></br>
+                        
+                        region: {this.props.region}<br></br>
+                        note: {this.props.note}<br></br>
+
+                        price: ${this.props.price}<br></br>                  
                         
                         {this.props.reviews? this.renderReviews() : null}
                         <br></br><br></br>
