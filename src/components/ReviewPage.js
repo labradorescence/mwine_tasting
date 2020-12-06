@@ -1,6 +1,5 @@
 import React from 'react'
 import ReviewCollection from './ReviewCollection'
-//import NewWineForm from './NewWineForm'
 import ReviewForm from './ReviewForm'
 import { Container } from 'semantic-ui-react'
 import Search from './Search'
@@ -9,11 +8,21 @@ export default class WinePage extends React.Component{
 
     state = {
         searchTerm: "low acidity",
-        wine: []
+        review: []
     }
 
     componentDidMount(){
-        fetch("")
+        fetch("https://mwine.herokuapp.com/api/v1/reviews")
+            .then(r => r.json())
+            .then(review => {
+                this.setState({ review }) //setState w/ fetched db
+            })
+    }
+
+    addReview = newReview => {
+        this.setState({
+            review: [newReview, ...this.state.review]
+        })
     }
 
     handleSetSearch = searchTerm => {
@@ -23,15 +32,14 @@ export default class WinePage extends React.Component{
     }
 
     render(){
-        console.log("hello world from WINEPAGE !!")
         return (
             <Container>
 
-                <ReviewForm 
-                review={this.state.review}/>
-                <ReviewCollection />
+                <ReviewForm addReview={this.addReview}/>
 
-                <Search searchTerm ={this.state.search}
+                <ReviewCollection review={this.state.review} searchTerm={this.state.searchTerm}/>
+
+                <Search searchTerm ={this.state.searchTerm}
                 setSearchTerm = {this.handleSetSearch}/>
                 
                 </Container>

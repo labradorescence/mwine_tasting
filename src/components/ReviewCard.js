@@ -11,7 +11,8 @@ export default class ReviewCard extends React.Component {
         return (
             <Card>
 
-                    <div className="content">
+                <div class="ui cards">
+                <div class="card">
 
                         <div className="header">{name}</div>
                        
@@ -27,22 +28,22 @@ export default class ReviewCard extends React.Component {
                         <li>{taste}</li>
                         <li>{acidity_level}</li>
                         <li>{note}</li>
-
                         </div>
-                    </div>
 
-                    <div className="extra content">
-                        
+                    <div className="extra ">
                         <div className="right floated">
                             {region}
                         </div>
 
                         <div className="left floated">
+                        <div class="ui star rating" data-rating="4"></div>
                         <span role="img" aria-label="star">⭐</span>{rating}
                         </div>
-                    
                     </div>
-
+                    
+                </div>
+                </div>
+        
             </Card>
         )
     }

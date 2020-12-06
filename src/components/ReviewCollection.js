@@ -1,27 +1,13 @@
 import React from 'react'
 import ReviewCard from './ReviewCard'
-// import { Card } from 'semantic-ui-react' 
+import { Card } from 'semantic-ui-react' 
 
 
 export default class ReviewCollection extends React.Component{
-    
-    state = {
-        review: ['hi'] //set empty db setup for state
-    }
-
-    componentDidMount(){
-        fetch("https://mwine.herokuapp.com/api/v1/reviews")
-            .then(r => r.json())
-            .then(review => {
-                // console.log(review)
-                // console.log(this.state)
-                console.log(review)
-                this.setState({ review }) //setState w/ fetched db
-            })
-    }
 
     renderCards(){
-        return this.state.review.map(eachReview => 
+
+        return this.props.review.map(eachReview => 
 
             <ReviewCard 
             key={eachReview.id}
@@ -38,15 +24,15 @@ export default class ReviewCollection extends React.Component{
             taste={eachReview.taste}
             />
             
-            )
+        )
     }
 
     render(){
         //console.log(this.state)
         return (
-        <div>
+        <Card.Group itemsPerRow={3}>
           {this.renderCards()}
-        </div>
+        </Card.Group>
         )
     }
 }

@@ -19,14 +19,14 @@ export default class ReviewForm extends React.Component {
 
     handleInputChange = e => {
         //debugger
-        console.log(e.target.value, e.target.name) 
+        //console.log(e.target.value, e.target.name) 
         this.setState({
             [e.target.name]: e.target.value
         })
     }
 
     handleSubmit = () => {
-        console.log("submitting form......")
+        //console.log("submitting form......")
 
         const bodyData = {
             "date": this.state.date,
@@ -52,7 +52,8 @@ export default class ReviewForm extends React.Component {
         })
         .then(r => r.json())
         .then(newReview => {
-            console.log(newReview)
+            //console.log(newReview) // need to render!
+            this.props.addReview(newReview) //this refreshes the page with the new submitted review! 
         })
     }
 
