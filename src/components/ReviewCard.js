@@ -11,8 +11,8 @@ export default class ReviewCard extends React.Component {
         return (
             <Card>
 
-                <div class="ui cards">
-                <div class="card">
+                <div className="ui cards">
+                <div className="card">
 
                         <div className="header">{name}</div>
                        
@@ -36,11 +36,11 @@ export default class ReviewCard extends React.Component {
                         </div>
 
                         <div className="left floated">
-                        <div class="ui star rating" data-rating="4"></div>
+                        <div className="ui star rating" data-rating="4"></div>
                         <span role="img" aria-label="star">⭐</span>{rating}
                         </div>
                     </div>
-                    
+
                 </div>
                 </div>
         
