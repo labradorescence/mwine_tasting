@@ -26,8 +26,6 @@ export default class ReviewForm extends React.Component {
     }
 
     handleSubmit = () => {
-        //console.log("submitting form......")
-
         const bodyData = {
             "date": this.state.date,
             "name": this.state.name,
@@ -41,7 +39,7 @@ export default class ReviewForm extends React.Component {
             "acidity_level": this.state.acidity_level,
             "taste": this.state.taste
         }
-        console.log(bodyData)
+       // console.log(bodyData)
 
         fetch("https://mwine.herokuapp.com/api/v1/reviews", { 
             method: "POST",

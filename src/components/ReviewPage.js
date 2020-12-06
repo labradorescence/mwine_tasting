@@ -19,7 +19,7 @@ export default class WinePage extends React.Component{
             })
     }
 
-    addReview = newReview => {
+    addReview = newReview => { //this render the new review (without refreshing the page)
         this.setState({
             review: [newReview, ...this.state.review]
         })
