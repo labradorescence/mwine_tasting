@@ -43,7 +43,7 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 
 # Wireframe
 
-`
+```
               index
                 |
                App
@@ -56,7 +56,7 @@ ReviewForm  Search  ReviewCollection
                                 |
                             ReviewCard
                             
-`
+```
 
 # reference
  Mike Bostock's working demo https://github.com/observablehq/react-zoomable-sunburst
