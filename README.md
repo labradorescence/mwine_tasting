@@ -29,6 +29,7 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 * Uses ActiveModelSerializers, which turns model attributes into JSON object keys
 
 # Tech Stack
+* D3 / Observable
 * React.js
 * Ruby on Rails API
 * HTML/CSS
