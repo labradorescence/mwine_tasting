@@ -42,7 +42,7 @@ M Wine Tasting is a wine journal web application where user can see, swirl, snif
 * Semantc UI
 * Wheelnav
 
-# Wireframe
+# Dataflow
 
 ```
               index
